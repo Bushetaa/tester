@@ -17,6 +17,10 @@
             padding: 20px;
         }
 
+        section{
+            margin: 20px;
+        }
+
         button{
             padding: 10px 20px;
             border: none;
@@ -27,6 +31,12 @@
 
         button:hover{
             background-color: #0056b3;
+        }
+
+        #message{
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
         }
     </style>
 
@@ -40,7 +50,7 @@
 
 <section>
     <h2>About</h2>
-    <p>This page is created to practice Git commands like commit, push, and pull.</p>
+    <p>This page is created to practice Git commands like commit, push, pull, and version tracking.</p>
 </section>
 
 <section>
@@ -50,13 +60,15 @@
         <li>Push to GitHub</li>
         <li>Pull updates</li>
         <li>Create branches</li>
+        <li>Track versions</li>
     </ul>
 </section>
 
 <section>
     <h2>Try the Button</h2>
     <p>Click the button below for testing.</p>
-    <button>Click Me</button>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
 </section>
 
 <section>
@@ -65,8 +77,14 @@
 </section>
 
 <footer>
-    <p>Created for Git learning - Version 3</p>
+    <p>Created for Git learning - Version 4</p>
 </footer>
+
+<script>
+function showMessage(){
+    document.getElementById("message").innerText = "Button clicked successfully!";
+}
+</script>
 
 </body>
 </html>
