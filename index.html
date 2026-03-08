@@ -3,60 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Git Learning Test</title>
-
-    <style>
-        body{
-            font-family: Arial;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-
-        header{
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
-
-        section{
-            margin: 20px;
-        }
-
-        input{
-            padding: 8px;
-            margin-right: 10px;
-        }
-
-        button{
-            padding: 10px 20px;
-            border: none;
-            background-color: #007BFF;
-            color: white;
-            cursor: pointer;
-        }
-
-        button:hover{
-            background-color: #0056b3;
-        }
-
-        #message{
-            margin-top: 15px;
-            color: green;
-            font-weight: bold;
-        }
-
-        #counter{
-            margin-top: 10px;
-            font-size: 18px;
-            color: #333;
-        }
-    </style>
-
 </head>
 <body>
 
 <header>
     <h1>Git Practice Project</h1>
     <p>Learning Git step by step</p>
+
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Projects</a> |
+        <a href="#">Contact</a>
+    </nav>
 </header>
 
 <section>
@@ -71,19 +30,13 @@
         <li>Push to GitHub</li>
         <li>Pull updates</li>
         <li>Create branches</li>
-        <li>Track versions</li>
+        <li>Merge branches</li>
     </ul>
 </section>
 
 <section>
-    <h2>Test Interaction</h2>
-    <p>Enter your name and click the button.</p>
-
-    <input type="text" id="nameInput" placeholder="Enter your name">
-    <button onclick="showName()">Submit</button>
-
-    <p id="message"></p>
-    <p id="counter">Button clicks: 0</p>
+    <h2>Projects</h2>
+    <p>This section will contain small practice projects related to Git and web development.</p>
 </section>
 
 <section>
@@ -92,22 +45,8 @@
 </section>
 
 <footer>
-    <p>Created for Git learning - Version 6</p>
+    <p>Created for Git learning - Version 3</p>
 </footer>
-
-<script>
-let count = 0;
-
-function showName(){
-    var name = document.getElementById("nameInput").value;
-    document.getElementById("message").innerText =
-        "Hello " + name + ", welcome to the Git test page!";
-
-    count++;
-    document.getElementById("counter").innerText =
-        "Button clicks: " + count;
-}
-</script>
 
 </body>
 </html>
