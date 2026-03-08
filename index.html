@@ -43,6 +43,12 @@
             color: green;
             font-weight: bold;
         }
+
+        #counter{
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
     </style>
 
 </head>
@@ -77,6 +83,7 @@
     <button onclick="showName()">Submit</button>
 
     <p id="message"></p>
+    <p id="counter">Button clicks: 0</p>
 </section>
 
 <section>
@@ -85,13 +92,20 @@
 </section>
 
 <footer>
-    <p>Created for Git learning - Version 5</p>
+    <p>Created for Git learning - Version 6</p>
 </footer>
 
 <script>
+let count = 0;
+
 function showName(){
     var name = document.getElementById("nameInput").value;
-    document.getElementById("message").innerText = "Hello " + name + ", welcome to the Git test page!";
+    document.getElementById("message").innerText =
+        "Hello " + name + ", welcome to the Git test page!";
+
+    count++;
+    document.getElementById("counter").innerText =
+        "Button clicks: " + count;
 }
 </script>
 
